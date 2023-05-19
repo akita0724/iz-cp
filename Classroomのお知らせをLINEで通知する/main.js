@@ -34,7 +34,7 @@ function get_Courses() {
     for (let i = 0; i <ids[0].length; i++){
       let links = [];
       try{
-        let course = Classroom.Courses.Announcements.list(ids[i]);
+        let course = Classroom.Courses.Announcements.list(ids[0][i]);
         for(let announcements of course.announcements){
           let link = announcements.alternateLink;
           let text = announcements.text;
